@@ -5,6 +5,31 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+html {
+    scroll-behavior: smooth;
+}
+#nav-up {
+    position: fixed;
+    display: none;
+    bottom: 0;
+    right: 5%;
+    font-size: 50px;
+    color: #F2994A;
+    transition: 1s;
+}
+.nav-up-block {
+    display: block !important;
+}
+::-webkit-scrollbar{
+    width: 8px;
+    height: 5px;
+}
+::-webkit-scrollbar-thumb{
+    // background-color: linear-gradient(222.26deg, #3B1D60 1.22%, #040D3E 106.28%);
+   background-color: #241752;
+    border-radius: 5px;
+}
+
 @font-face {
     font-family: 'Gilroy';
     src: url('../gilroy/Gilroy-SemiBoldItalic.ttf') format('truetype');
@@ -29,11 +54,7 @@ body{
 h4 {
     display: inline-block;
 }
-.clock {
-    font-size: 100px;
-    margin-left: 100px;
-    display: block;
-}
+
 .header {
     #logo {
         //  TODO:

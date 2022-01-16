@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/3c0bf4c975.js" crossorigin="anonymous"></script>
     <link
     rel="stylesheet"
@@ -30,10 +31,10 @@
                     </a>
                     <div class="nav-menu">
                     <ul>
-                        <li><a href="#!">Bosh Sahifa</a></li>
-                        <li><a href="#!">Biz haqimizda</a></li>
-                        <li><a href="#!">Bog'lanish</a></li>
-                        <li><a href="#!">Xizmatlar</a></li>
+                        <li><a href="#">Bosh Sahifa</a></li>
+                        <li><a href="#our-about">Biz haqimizda</a></li>
+                        <li><a href="#service">Xizmatlar</a></li>
+                        <li><a href="#connect">Bog'lanish</a></li>
                     </ul>
                     </div>
                     <div class="nav-right">
@@ -57,28 +58,29 @@
         </div>
         <section class="content">
             <!-- <h1 class="clock">12:21</h1> -->
-            <div class="content_information">
+            <div class="content_information " data-aos="fade-down-right">
                 <h1>Ilmlilar kashf etiladigan, markaz Ilmhub! </h1>
                 <p>Yuksak qadriyatli, ilmli tek injinerlar tarbiyalash oliy maqsadimiz!</p>
                 <input type="email" id="input" placeholder="Email pochta kiriting:">
                 <button class="btn_get">Get started <i class="fas fa-arrow-right"></i></button>
             </div>
-            <div class="content_img">
-                <img src="./img/Frame (4).png" alt="Error">
+            <div class="content_img" data-aos="fade-up-left">
+                <img src="./img/Frame-4.png" alt="Error">
             </div>
         </section>
     </header>
     <main class="main">
-        <section class="blok">
-            <h1 class="blok-h1">O'quv markazimiz haqida ko'proq ma'lumotlar</h1>
+        <section class="blok" id="our-about">
+       
+            <h1 class="blok-h1" data-aos="fade-up">O'quv markazimiz haqida ko'proq ma'lumotlar</h1>
 
             <div class="container">
                 <div class="blok-box">
                     <div class="blok-box-blog">
-                        <div class="blok-blog-1">
+                        <div class="blok-blog-1" data-aos="fade-right">
                             <img src="./img/rasm.png" alt="Error">
                         </div>
-                        <div class="blok-blog-2">
+                        <div class="blok-blog-2" data-aos="fade-left">
                             <a href="https://ilmhub.notion.site/Maqsad-5b6be604e5054753abc9aac096992d3a">
                             <div class="blok-title">
                                     <img src="./img/blok-1.svg" alt="Error">
@@ -93,9 +95,10 @@
                                 Yuksak qadriyatli, ilmli tek injinerlar tarbiyalash oliy maqsadimiz!
                             </p>
                         </div>
+
                     </div>
                     <div class="blok-box-blog">
-                        <div class="blok-blog-2 blok-blog-3 " >
+                        <div class="blok-blog-2 blok-blog-3 " data-aos="flip-left">
                             <a href="https://ilmhub.notion.site/Missiya-36127dff08314affa187ea0ad464e492">
                             <div class="blok-title" style="margin-bottom:15px">
                                     <img src="./img/blok-2.svg" alt="Error">
@@ -107,17 +110,17 @@
                                 Ilmli o’zbeklar safini kengaytirish, global bozorda talabgir injinerlar tarbiyalash va ummatga yordamlashish.
                             </p>
                         </div>
-                        <div class="blok-blog-1">
+                        <div class="blok-blog-1" data-aos="flip-right">
                             <img src="./img/rasm2.png" alt="Error">
                         </div>
-                        
                     </div>
 
                     <div class="blok-box-blog">
-                        <div class="blok-blog-1">
+                        <div class="blok-blog-1" data-aos="zoom-in-down">
                             <img src="./img/rasm3.png" alt="Error">
                         </div>
-                        <div class="blok-blog-2">
+                        <div class="blok-blog-2" data-aos="fade-up"
+                        data-aos-duration="3000">
                             <a href="https://ilmhub.notion.site/Qiymatliligi-de2e2979cd294ee7b3ebc196f6bd6779">
                             <div class="blok-title">
                                     <img src="./img/blok-3.svg" alt="Error">
@@ -132,8 +135,9 @@
                         </div>
                     </div>
                     
-                    <div class="blok-box-blog">
-                        <div class="blok-blog-2 blok-blog-3 " >
+                    <div class="blok-box-blog" >
+                        <div class="blok-blog-2 blok-blog-3 " data-aos="fade-up"
+                        data-aos-anchor-placement="top-bottom">
                             <a href="https://ilmhub.notion.site/Target-Auditoriya-60cbd6f6d9bf40f48aadce09272d5bef">
                             <div class="blok-title" style="margin-bottom:15px">
                                     <img src="./img/blok-4.svg" alt="Error">
@@ -150,17 +154,20 @@
                                 </ol>
                         
                         </div>
-                        <div class="blok-blog-1">
+                        <div class="blok-blog-1"  data-aos="fade-up"
+                        data-aos-anchor-placement="center-bottom">
                             <img src="./img/rasm4.png" alt="Error">
                         </div>
                         
                     </div>
 
                     <div class="blok-box-blog">
-                        <div class="blok-blog-1">
+                        <div class="blok-blog-1" data-aos="fade-up"
+                        data-aos-anchor-placement="center-center">
                             <img src="./img/rasm5.png" alt="Error">
                         </div>
-                        <div class="blok-blog-2">
+                        <div class="blok-blog-2" data-aos="fade-up"
+                        data-aos-anchor-placement="center-center">
                             <a href="https://ilmhub.notion.site/Strategiya-50f85080bbf24725a812c70da82b39c0">
                             <div class="blok-title">
                                     <img src="./img/blok-5.svg" alt="Error">
@@ -179,15 +186,13 @@
                     </div>
 
                     <div class="blok-box-blog">
-                        <div class="blok-blog-2 blok-blog-3 " >
+                        <div class="blok-blog-2 blok-blog-3 " data-aos="fade-down">
                             <a href="https://ilmhub.notion.site/Ustuvorliklar-4b7c0152209e4fceb550cb3c51f0595c">
                             <div class="blok-title" style="margin-bottom:15px">
                                     <img src="./img/blok-6.svg" alt="Error">
                                     <h1>Ustuvorliklar</h1>
                                 </div>
                             </a>
-                            
-                          
                             <ul class="teg-ul">
                                 <li><i class='bx bx-play btn-show'></i> 
                                     Asosiy qiymatlilik
@@ -195,38 +200,31 @@
                                         Zamonaviy kasblarni sifatli o’rgatish
                                     </p>
                                 </li>
-                                
-
                                 <li><i class='bx bx-play btn-show'></i> 
                                     Jamoa uchun
                                     <p>
                                         Hurmat, Sifat, Tenglik
                                     </p>
                                 </li>
-                               
-
                                 <li><i class='bx bx-play btn-show'></i> 
                                     Mijozlar uchun
                                     <p>
                                         Sifatli ta’lim, Tajribali ustozlar, So’glom raqobat muhiti
                                     </p>
-                                </li>
-                               
-                                
+                                </li>                
                             </ul>
-                        
                         </div>
-                        <div class="blok-blog-1">
+                        <div class="blok-blog-1" data-aos="fade-down-left">
                             <img src="./img/rasm6.png" alt="Error">
                         </div>
                         
                     </div>
 
                     <div class="blok-box-blog">
-                        <div class="blok-blog-1">
+                        <div class="blok-blog-1" data-aos="fade-down-right">
                             <img src="./img/rasm7.png" alt="Error">
                         </div>
-                        <div class="blok-blog-2">
+                        <div class="blok-blog-2" data-aos="fade-up-left">
                             <a href="https://ilmhub.notion.site/Muhit-04e484326a9e42e482dfed58ec8f503c">
                             <div class="blok-title">
                                     <img src="./img/blok-7.svg" alt="Error">
@@ -245,29 +243,12 @@
             </div>
         </section>
 
-        <section class="services">
+        <section class="services" id="service">
+        <section class="services" data-aos="zoom-out-right">
             <h1 class="services-h1">Xizmatlar</h1>
                 <div class="container">
                     <div class="services-box">
-                        
-                        
-                        
-                       
-                       
-                       
-                       
-                       
-                      
-                                       
-                      
-                       
-
-
-
-
-
-
-
+ 
                         <div class="swiper mySwiper">
                             <div class="swiper-wrapper">
                               <div class="swiper-slide">
@@ -381,17 +362,17 @@
                             <div class="swiper-pagination"></div>
                           </div>
 
-
-
                     </div>
                 </div>
         </section>
 
-        <section class="location">
+        <section class="location" id="connect">
             <div class="container">
                 <h1>Biz bilan qanday bog'lanish mumkin</h1>
                 <div class="location-box">
-                    <div class="loc-blok-1">
+                    <div class="loc-blok-1" data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
                         <div class="loc-blog-1" >
                             <i class='bx bxs-phone'></i>
                             <h5>+99877 777 77 77</h5>
@@ -409,7 +390,9 @@
                             <h5>IlmHub@umail.uz</h5>
                         </div>
                     </div>
-                    <div class="loc-blok-2">
+                    <div class="loc-blok-2" data-aos="fade-down"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47931.906794512695!2d69.31085335163172!3d41.3361759896304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef4431777da7b%3A0x289db26806f061e!2z0JzQuNGA0LfQviDQo9C70YPSk9Cx0LXQuiDRgtGD0LzQsNC90LgsINCi0L7RiNC60LXQvdGCLCBPYHpiZWtpc3Rvbg!5e0!3m2!1suz!2s!4v1642352451887!5m2!1suz!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
                 </div>
@@ -420,19 +403,20 @@
     <!-- FOOTER PART OF -->
     <footer class="footer_container">
         <section class="footer_part">
-            <div class="text">
+            <div class="text"  data-aos="fade-up"
+            data-aos-duration="3000">
                 <a href="./index.html">
-                    <div class="footer_logo">
+                    <div class="footer_logo" >
                         <img src="./img/Logo-3.svg" alt="img" class="logo_part">
                         <h1 class="Ilmhub">IlmHub</h1>
                     </div>
                 </a>
-                <div class="footer_p">
+                <div class="footer_p" >
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, debitis.</p>
                 </div>
             </div>
-            <div class="footer_part_of">
-                <div class="information">
+            <div class="footer_part_of" data-aos="fade-right">
+                <div class="information" >
                     <h3>Kompaniya</h3>
                     <ul>
                         <li><a href="#">Biz haqimizda</a></li>
@@ -440,14 +424,14 @@
                         <li><a href="#">Bog'lanish</a></li>
                     </ul>
                 </div>
-                <div class="information">
+                <div class="information" >
                     <h3>Ko'proq ma'lumotlar</h3>
                     <ul>
                         <li><a href="#">Shartlar & Qoidalar</a></li>
                         <li><a href="#">Maxfiylik siyosati</a></li>
                     </ul>
                 </div>
-                <div class="information">
+                <div class="information" >
                     <h3>Bizni kuzatib boring</h3>
                     <div class="button_my">
                     <input type="email"  placeholder="Email adress" id="footer_part_input">
@@ -482,6 +466,71 @@
             </div>
         </section>
     </footer>
+
+    <a href="#" id="nav-up">
+        <i class='bx bxs-up-arrow-circle'></i>
+    </a>
+
+    <div class="show-login-new">
+        <section class="Sign_section">
+            <div class="box">
+                <div class="form">
+                  <div class="login-x"><i class="far fa-times-circle  sign-in-x"></i></div>  
+                    <h2>Sign In</h2>
+                    <Span></Span>
+                    <form action="" method="post">
+                        <div class="input_sign">
+                            <input type="email" name="" id="" placeholder="Email">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                        </div>
+                        <div class="input_sign">
+                            <input type="password" name="" id="" placeholder="password">
+                            <i class="fa fa-lock" aria-hidden="true"></i>
+                        </div>
+                        <label class="remember"><input type="checkbox" id="checked">Remember me</label>
+                        <div class="input_sign">
+                            <input type="button" value="Sign In" id="Sign">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="show-login show-sign-up">
+        <section class="Sign_section">
+            <div class="box">
+                <div class="form">
+                  <div class="close-x">
+                    <i class="far fa-times-circle login-x "></i> 
+                  </div>  
+                    <h2>Sign Up</h2>
+                    <Span></Span>
+                    <form action="" method="post">
+                        <div class="input_sign">
+                            <input type="email"  placeholder="Email" id="sign_in_login">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                        </div>
+                        <div class="input_sign">
+                            <input type="password" placeholder="Password" id="password1">
+                            <i class="fa fa-lock" aria-hidden="true"></i>
+                        </div>
+                        <div class="input_sign">
+                            <input type="password" placeholder="Confirm password" id="password2">
+                            <i class="fa fa-lock" aria-hidden="true"></i>
+                        </div>
+                        <label class="remember"><input type="checkbox" id="check">Remember me</label>
+                        <div class="input_sign">
+                            <div class="submit-my">
+                                <input type="button" value="Sign Up" id="Sign">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+
 </body>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
@@ -504,6 +553,12 @@
     },
   });
 </script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init();
+  </script>
+
 <script src="./js/app.js"></script>
 <script src="./js/navbar.js"></script>
 </html>
