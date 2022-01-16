@@ -4,6 +4,7 @@
   text-decoration: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 @font-face {
@@ -32,9 +33,14 @@ h4 {
   display: inline-block;
 }
 
+.clock {
+  font-size: 100px;
+  margin-left: 100px;
+  display: block;
+}
+
 .header {
   height: 100vh;
-  height: 87vh;
   color: #fff;
 }
 
@@ -297,8 +303,11 @@ h4 {
 
 .blok .blok-h1 {
   text-transform: uppercase;
+  font-size: 40px;
+  width: 60%;
   text-align: center;
-  color: #fff;
+  margin: 0 auto;
+  color: #99EFD0;
 }
 
 .blok .blok-box .blok-box-blog {
@@ -405,6 +414,12 @@ h4 {
   padding-right: 10%;
 }
 
+.location {
+  margin-top: 100px;
+  text-align: center;
+  color: #99EFD0;
+}
+
 .network {
   display: none;
 }
@@ -472,10 +487,24 @@ h4 {
   list-style-type: none;
 }
 
+.footer_part .footer_part_of .information ul li a {
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.footer_part .footer_part_of .information ul li a:hover {
+  color: #F2994A;
+}
+
 .footer_logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.footer_logo img {
+  -webkit-animation: hover 4s infinite;
+          animation: hover 4s infinite;
 }
 
 .footer_part_of {
@@ -508,6 +537,7 @@ h4 {
   font-size: 18px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .button_my .btn_icon:hover {
@@ -541,12 +571,18 @@ h4 {
   font-size: 25px;
   margin-left: 5px;
   color: #fff;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.Ilmhub:hover {
+  color: #F2994A;
 }
 
 .footer_p {
   width: 65%;
   margin-top: 20px;
-  color: #99EFD0;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .teg-ol {

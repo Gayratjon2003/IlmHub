@@ -3,6 +3,7 @@
     padding: 0;
     text-decoration: none;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 @font-face {
     font-family: 'Gilroy';
@@ -27,6 +28,11 @@ body{
 h4 {
     display: inline-block;
 }
+.clock {
+    font-size: 100px;
+    margin-left: 100px;
+    display: block;
+}
 .header {
     #logo {
         //  TODO:
@@ -44,7 +50,6 @@ h4 {
         
     }
     height: 100vh;
-    height: 87vh;
     @include colornav();
     .navbar-full {
         background-color: #3B1D60;
@@ -216,8 +221,12 @@ h4 {
     width: 100%;
     .blok-h1 {
         text-transform: uppercase;
+        font-size: 40px;
+        width: 60%;
         text-align: center;
-        @include colornav();
+        margin: 0 auto;
+        color: #99EFD0;
+        // @include colornav();
     }
     .blok-box {
         
@@ -313,7 +322,14 @@ h4 {
 
 }
 
-
+.location {
+    margin-top: 100px;
+    text-align: center;
+    color: #99EFD0;
+    h1{
+        // color: #000;
+    }
+}
 
 // FOOTER PART OF
 
@@ -373,7 +389,12 @@ h4 {
         .information ul li{
             padding-top: 12px;
             list-style-type: none;
-            
+            a {
+                transition: .3s;
+            }
+            a:hover {
+                color: #F2994A;
+            }
         }
         
         
@@ -382,7 +403,9 @@ h4 {
 
 .footer_logo{
     display: flex;
-    
+    img {
+        animation: hover 4s infinite;
+    }
 
 }
 
@@ -410,6 +433,7 @@ h4 {
         border: none;
         font-size: 18px;
         transition: 0.3s;
+        cursor: pointer;
         &:hover{
             background-color: #99EFD0;
         }
@@ -440,12 +464,16 @@ h4 {
     font-size: 25px;
     margin-left: 5px;
     @include colornav();
+    transition: .3s;
+    &:hover {
+        color:  #F2994A;
+    }
 }
 
 .footer_p{
     width: 65%;
     margin-top: 20px;
-    color: #99EFD0;
+    color: rgba(255, 255, 255, 0.7)
 }
 .teg-ol {
     border-left: 4px solid #99EFD0;
