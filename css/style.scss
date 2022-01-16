@@ -9,11 +9,62 @@
     width: 85%;
     margin: 0 auto;
 }
+@mixin colornav {
+    color: #fff;
+}
 .header {
+    background-color: #3B1D60;
+    @include colornav();
     .navbar {
         width: 100%;
+        height: 80px;
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        font-size: 12px;
+        .logo {
+            display: flex;
+            height: 80px;
+            align-items: center;
+            img {
+                width: 60%;
+                height: 60%;
+            }
+        }
+        h1 {
+            font-size: 25px;
+            margin-left: 15px;
+        }
+        ul {
+            li {
+                display: inline-block;
+                margin-right: 20px;
+                a {
+                    @include colornav();
+                    text-transform: uppercase;
+                    font-size: 12px;
+                }
+            }
+        }
         
+        .language {
+            font-size: 12px;
+            .lan-uz {
+                padding-right: 10px;
+                border-right: 1px solid #fff;
+            }
+            .lan-en {
+                padding-left: 8px;
+            }
+            a {
+                @include colornav();
+            }
+        }
+        .buttons {
+            font-size: 12px;
+            .btn {
+                
+            }
+        }
     }
 }
