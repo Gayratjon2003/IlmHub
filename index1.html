@@ -9,8 +9,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/3c0bf4c975.js" crossorigin="anonymous"></script>
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+  />
+    <link rel="stylesheet" href="./css/style.css">
     <title>IlmHub</title>
 </head>
 <body>
@@ -25,15 +30,15 @@
                         </div>
                     </a>
                     <ul>
-                        <li><a href="#!">Bosh Sahifa</a></li>
-                        <li><a href="#!">Biz haqimizda</a></li>
-                        <li><a href="#!">Bog'lanish</a></li>
-                        <li><a href="#!">Xizmatlar</a></li>
+                        <li><a href="#">Bosh Sahifa</a></li>
+                        <li><a href="#our-about">Biz haqimizda</a></li>
+                        <li><a href="#service">Xizmatlar</a></li>
+                        <li><a href="#connect">Bog'lanish</a></li>
                     </ul>
                     <div class="nav-right">
                         <div class="language">
                             <span ><a href="./index.html" class="lan-uz">UZ</a></span>
-                            <span ><a href="#!" class="lan-en">ENG</a></span>
+                            <span ><a href="index1.html" class="lan-en">ENG</a></span>
                         </div>
                         <div class="buttons">
                             <button class="btn sign-in">Kirish</button>
@@ -45,20 +50,20 @@
         </div>
         <section class="content">
             <!-- <h1 class="clock">12:21</h1> -->
-            <div class="content_information">
+            <div class="content_information " data-aos="fade-down-right">
                 <h1>Ilmlilar kashf etiladigan, markaz Ilmhub! </h1>
                 <p>Yuksak qadriyatli, ilmli tek injinerlar tarbiyalash oliy maqsadimiz!</p>
                 <input type="email" id="input" placeholder="Email pochta kiriting:">
                 <button class="btn_get">Get started <i class="fas fa-arrow-right"></i></button>
             </div>
-            <div class="content_img">
-                <img src="./img/Frame (4).png" alt="">
+            <div class="content_img" data-aos="fade-up-left">
+                <img src="./img/Frame-4.png" alt="Error">
             </div>
         </section>
     </header>
     <main class="main">
-        <section class="blok">
-            <h1 class="blok-h1">O'quv markazimiz haqida ko'proq bilib olsak</h1>
+        <section class="blok" id="our-about">
+            <h1 class="blok-h1">O'quv markazimiz haqida ko'proq ma'lumotlar</h1>
 
             <div class="container">
                 <div class="blok-box">
@@ -157,10 +162,10 @@
                                 </div>
                             </a>
                             <ol start="1" class="teg-ol">
-                                <li>Maktab o’quvchilari</li>
-                                <li>Universitet talabalari</li>
-                                <li>Zamonaviy kasb qidirayotganlar</li>
-                                <li>Barcha ITga qiziquvchilar</li>
+                                <li>IT sohasiga qiziqqanlarni jamlash</li>
+                                <li>Zamonaviy kasblarni o’rgatish</li>
+                                <li>Talantlarni mashxur kompaniyalarga yo’naltirish</li>
+                                <li>Innovatsion start-uplar boshlash</li>
                             </ol>
                            
                         </div>
@@ -233,10 +238,153 @@
             </div>
         </section>
 
-        <section class="location">
+        <section class="services" id="service">
+            <h1 class="services-h1">Xizmatlar</h1>
+                <div class="container">
+                    <div class="services-box">
+ 
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                <div class="card-logo">
+                                    <div class="card">
+                                        <img src="./img/html.png" alt="Error">
+                                    </div>
+                                    <h1 class="card-h1">html</h1>
+                                    
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="card-logo">
+                                    <div class="card">
+                                        <img src="./img/css.png" alt="Error">
+                                    </div>
+                                    <h1 class="card-h1">Css</h1>
+                                    
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                               
+                        <div class="card-logo">
+                            <div class="card">
+                                <img src="./img/sass.png" alt="Error">
+                            </div>
+                            <h1 class="card-h1">Sass</h1>
+                        </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="card-logo">
+                                    <div class="card">
+                                        <img src="./img/Bootstrap.png" alt="Error">
+                                    </div>
+                                    <h1 class="card-h1">bootstrap</h1>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="card-logo">
+                                    <div class="card">
+                                        <img src="./img/JS.png" alt="Error">
+                                    </div>
+                                    <h1 class="card-h1">JavaScript</h1>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="card-logo">
+                                    <div class="card">
+                                        <img src="./img/React.png" alt="Error">
+                                    </div>
+                                    <h1 class="card-h1">React JS</h1>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="card-logo">
+                                    <div class="card">
+                                        <img src="./img/laravel.png" alt="Error">
+                                    </div>
+                                    <h1 class="card-h1">Laravel</h1>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="card-logo">
+                                    <div class="card">
+                                        <img src="./img/vue_js.png" alt="Error">
+                                    </div>
+                                    <h1 class="card-h1">Vue Js</h1>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="card-logo">
+                                    <div class="card">
+                                        <img src="./img/firebase.png" alt="Error">
+                                    </div>
+                                    <h1 class="card-h1">Firebase</h1>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="card-logo">
+                                    <div class="card">
+                                        <img src="./img/Wordpress.png" alt="Error">
+                                    </div>
+                                    <h1 class="card-h1">Wordpress</h1>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="card-logo">
+                                    <div class="card">
+                                        <img src="./img/Heroku2.png" alt="Error">
+                                    </div>
+                                    <h1 class="card-h1">Heroku</h1>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="card-logo">
+                                    <div class="card">
+                                        <img src="./img/Django.png" alt="Error">
+                                    </div>
+                                    <h1 class="card-h1">Django</h1>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="card-logo">
+                                    <div class="card">
+                                        <img src="./img/phyton2.png" alt="Error">
+                                    </div>
+                                    <h1 class="card-h1">Phyton</h1>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                          </div>
+
+                    </div>
+                </div>
+        </section>
+
+        <section class="location" id="connect">
             <div class="container">
+                <h1>Biz bilan qanday bog'lanish mumkin</h1>
                 <div class="location-box">
-                    <h1>Biz bilan qanday bog'lanish mumkin</h1>
+                    <div class="loc-blok-1">
+                        <div class="loc-blog-1" >
+                            <i class='bx bxs-phone'></i>
+                            <h5>+99877 777 77 77</h5>
+                        </div>
+                        <div class="loc-blog-1">
+                            <a href="https://maps.app.goo.gl/LZkq5BjdEhfRSwE58"><i class='bx bxs-map'></i></a>
+                            <h5>Toshkent, Mirzo Ulug'bek</h5>
+                        </div>
+                        <div class="loc-blog-1">
+                           <a href="https://maps.app.goo.gl/LZkq5BjdEhfRSwE58"><i class='bx bxs-home' ></i></a> 
+                            <h5>Buyuk ipak yo'li ko'chasi 17-uy</h5>
+                        </div>
+                        <div class="loc-blog-1">
+                          <a href="https://umail.uz/"><i class='bx bxl-gmail'></i></a>  
+                            <h5>IlmHub@umail.uz</h5>
+                        </div>
+                    </div>
+                    <div class="loc-blok-2">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47931.906794512695!2d69.31085335163172!3d41.3361759896304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef4431777da7b%3A0x289db26806f061e!2z0JzQuNGA0LfQviDQo9C70YPSk9Cx0LXQuiDRgtGD0LzQsNC90LgsINCi0L7RiNC60LXQvdGCLCBPYHpiZWtpc3Rvbg!5e0!3m2!1suz!2s!4v1642352451887!5m2!1suz!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
                 </div>
             </div>
         </section>
@@ -307,6 +455,37 @@
             </div>
         </section>
     </footer>
+
+    <a href="#" id="nav-up">
+        <i class='bx bxs-up-arrow-circle'></i>
+    </a>
 </body>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });
+</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init();
+  </script>
+
 <script src="./js/app.js"></script>
 </html>

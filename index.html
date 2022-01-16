@@ -30,10 +30,10 @@
                         </div>
                     </a>
                     <ul>
-                        <li><a href="#!">Bosh Sahifa</a></li>
-                        <li><a href="#!">Biz haqimizda</a></li>
-                        <li><a href="#!">Bog'lanish</a></li>
-                        <li><a href="#!">Xizmatlar</a></li>
+                        <li><a href="#">Bosh Sahifa</a></li>
+                        <li><a href="#our-about">Biz haqimizda</a></li>
+                        <li><a href="#service">Xizmatlar</a></li>
+                        <li><a href="#connect">Bog'lanish</a></li>
                     </ul>
                     <div class="nav-right">
                         <div class="language">
@@ -57,12 +57,12 @@
                 <button class="btn_get">Get started <i class="fas fa-arrow-right"></i></button>
             </div>
             <div class="content_img" data-aos="fade-up-left">
-                <img src="./img/Frame (4).png" alt="Error">
+                <img src="./img/Frame-4.png" alt="Error">
             </div>
         </section>
     </header>
     <main class="main">
-        <section class="blok">
+        <section class="blok" id="our-about">
             <h1 class="blok-h1">O'quv markazimiz haqida ko'proq ma'lumotlar</h1>
 
             <div class="container">
@@ -238,7 +238,7 @@
             </div>
         </section>
 
-        <section class="services">
+        <section class="services" id="service">
             <h1 class="services-h1">Xizmatlar</h1>
                 <div class="container">
                     <div class="services-box">
@@ -356,13 +356,11 @@
                             <div class="swiper-pagination"></div>
                           </div>
 
-
-
                     </div>
                 </div>
         </section>
 
-        <section class="location">
+        <section class="location" id="connect">
             <div class="container">
                 <h1>Biz bilan qanday bog'lanish mumkin</h1>
                 <div class="location-box">
@@ -457,6 +455,71 @@
             </div>
         </section>
     </footer>
+
+    <a href="#" id="nav-up">
+        <i class='bx bxs-up-arrow-circle'></i>
+    </a>
+
+    <div class="show-login-new">
+        <section class="Sign_section">
+            <div class="box">
+                <div class="form">
+                  <div class="login-x"><i class="far fa-times-circle  sign-in-x"></i></div>  
+                    <h2>Sign In</h2>
+                    <Span></Span>
+                    <form action="" method="post">
+                        <div class="input_sign">
+                            <input type="email" name="" id="" placeholder="Email">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                        </div>
+                        <div class="input_sign">
+                            <input type="password" name="" id="" placeholder="password">
+                            <i class="fa fa-lock" aria-hidden="true"></i>
+                        </div>
+                        <label class="remember"><input type="checkbox" id="checked">Remember me</label>
+                        <div class="input_sign">
+                            <input type="button" value="Sign In" id="Sign">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="show-login show-sign-up">
+        <section class="Sign_section">
+            <div class="box">
+                <div class="form">
+                  <div class="close-x">
+                    <i class="far fa-times-circle login-x "></i> 
+                  </div>  
+                    <h2>Sign Up</h2>
+                    <Span></Span>
+                    <form action="" method="post">
+                        <div class="input_sign">
+                            <input type="email"  placeholder="Email" id="sign_in_login">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                        </div>
+                        <div class="input_sign">
+                            <input type="password" placeholder="Password" id="password1">
+                            <i class="fa fa-lock" aria-hidden="true"></i>
+                        </div>
+                        <div class="input_sign">
+                            <input type="password" placeholder="Confirm password" id="password2">
+                            <i class="fa fa-lock" aria-hidden="true"></i>
+                        </div>
+                        <label class="remember"><input type="checkbox" id="check">Remember me</label>
+                        <div class="input_sign">
+                            <div class="submit-my">
+                                <input type="button" value="Sign Up" id="Sign">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+
 </body>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
