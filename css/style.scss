@@ -17,59 +17,120 @@ body{
 }
 
 .header {
+<<<<<<< HEAD
+    #logo {
+        //  TODO:
+        @keyframes hover {
+          to {
+            transform: rotateY(0deg);
+          }
+          
+          from {
+            transform: rotateY(360deg);
+          }
+
+        }
+            animation: hover 4s infinite;
+        
+    }
+=======
     background: linear-gradient(222.26deg, #3B1D60 1.22%, #040D3E 106.28%);
     height: 100vh;
+>>>>>>> aaae601ddb214042d48fd064f263bd62c9a8818b
     @include colornav();
-    .navbar {
-        width: 100%;
-        height: 80px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        font-size: 12px;
-        .logo {
-            display: flex;
+    .navbar-full {
+        background-color: #3B1D60;
+        .navbar {
+
+            width: 100%;
             height: 80px;
+            display: flex;
+            justify-content: space-between;
             align-items: center;
-            img {
-                width: 60%;
-                height: 60%;
-            }
-        }
-        h1 {
-            font-size: 25px;
-            margin-left: 15px;
-        }
-        ul {
-            li {
-                display: inline-block;
-                margin-right: 20px;
-                a {
-                    @include colornav();
-                    text-transform: uppercase;
+            font-size: 12px;
+            
+            .nav-right {
+                display: flex;
+                align-items: center;
+                .language {
                     font-size: 12px;
+                    padding-right: 20px;
+                    .lan-uz {
+                        padding-right: 10px;
+                        border-right: 1px solid #fff;
+                    }
+                    .lan-en {
+                        padding-left: 8px;
+                    }
+                    a {
+                        @include colornav();
+                        &:hover {
+                            color: #F2994A !important;
+                        }
+                    }
+                }
+                .buttons {
+                    font-size: 12px;
+                    .btn {
+                        padding: 6px 15px;
+                        background-color: #F2994A;
+                        border: 1px solid transparent;
+                        border-radius: 5px;
+                        @include colornav();
+                        cursor: pointer;
+                        &:hover {
+                            border: 1px solid #F2994A;
+                            background-color: transparent;
+                            color: #F2994A;
+                        }
+                        @keyframes click {
+                            from {
+                                transform: translate(0, 4px);
+                            }
+                            to {
+                                transform: translate(0, 0px);
+                            }
+                        }
+                        &:focus {
+                            animation: click 0.1s forwards;
+                        }
+                    }
+                    .sign-in {
+                        margin-right: 20px;
+                    }
                 }
             }
-        }
-        
-        .language {
-            font-size: 12px;
-            .lan-uz {
-                padding-right: 10px;
-                border-right: 1px solid #fff;
+            .logo {
+                display: flex;
+                height: 80px;
+                align-items: center;
+                img {
+                    width: 60%;
+                    height: 60%;
+                }
             }
-            .lan-en {
-                padding-left: 8px;
-            }
-            a {
+            h1 {
+                font-size: 25px;
+                margin-left: 5px;
                 @include colornav();
             }
-        }
-        .buttons {
-            font-size: 12px;
-            .btn {
-                
+            ul {
+                margin-left: 300px;
+                li {
+                    display: inline-block;
+                    margin-right: 20px;
+                    a {
+                        @include colornav();
+                        text-transform: uppercase;
+                        font-size: 12px;
+                        &:hover {
+                            color: #F2994A !important;
+                        }
+                    }
+                }
             }
+            
+            
         }
     }
 }
