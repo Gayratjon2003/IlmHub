@@ -12,8 +12,13 @@
   margin: 0 auto;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .header {
-  background-color: #3B1D60;
+  background: linear-gradient(222.26deg, #3B1D60 1.22%, #040D3E 106.28%);
+  height: 100vh;
   color: #fff;
 }
 
@@ -82,5 +87,31 @@
 
 .header .navbar .buttons {
   font-size: 12px;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content .content_information {
+  width: 85%;
+  margin: auto;
+  margin-left: 7rem;
+  margin-top: 5rem;
+}
+
+.content .content_information h1 {
+  font-size: 44px;
+  font-family: 'Oxygen', sans-serif;
+}
+
+.content .content_img {
+  width: 100%;
+}
+
+.content .content_img img {
+  width: 90%;
 }
 /*# sourceMappingURL=style.css.map */

@@ -9,11 +9,16 @@
     width: 85%;
     margin: 0 auto;
 }
+body{
+    overflow-x: hidden;
+}
 @mixin colornav {
     color: #fff;
 }
+
 .header {
-    background-color: #3B1D60;
+    background: linear-gradient(222.26deg, #3B1D60 1.22%, #040D3E 106.28%);
+    height: 100vh;
     @include colornav();
     .navbar {
         width: 100%;
@@ -67,4 +72,29 @@
             }
         }
     }
+}
+
+.content{
+    display: flex;
+    .content_information{
+        width: 85%;
+        margin: auto;
+        margin-left: 7rem;
+        margin-top: 5rem;
+        h1{
+            font-size: 44px;
+            font-family: 'Oxygen', sans-serif;
+        }
+    }
+    .content_img{
+       
+        width: 100%;
+        img{
+            width: 90%;
+           
+
+        }
+    }
+    
+    
 }
