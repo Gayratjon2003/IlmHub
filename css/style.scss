@@ -38,15 +38,14 @@ p {
     font-family: 'Gilroy';
 }
 body {
+    overflow-x: hidden;
     background: linear-gradient(222.26deg, #3B1D60 1.22%, #040D3E 106.28%);
 }
 .container {
     width: 85%;
     margin: 0 auto;
 }
-body{
-    overflow-x: hidden;
-}
+
 @mixin colornav {
     color: #fff;
 }
@@ -763,7 +762,7 @@ h4 {
     font-size: 18px;
 }
 .form {
-    position: relative !important;
+    position: relative;
 }
 
 .login-x {
@@ -779,8 +778,12 @@ h4 {
     top: -65px;
 }
 .show-login-new {
-    display: none;
+    display: block;
 }
 .login-block {
     display: block !important;
 }
+
+ 
+//   MEDIA
+
