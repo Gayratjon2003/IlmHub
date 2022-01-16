@@ -12,7 +12,16 @@
   margin: 0 auto;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .header {
+<<<<<<< HEAD
+=======
+  background: linear-gradient(222.26deg, #3B1D60 1.22%, #040D3E 106.28%);
+  height: 100vh;
+>>>>>>> aaae601ddb214042d48fd064f263bd62c9a8818b
   color: #fff;
 }
 
@@ -181,5 +190,31 @@
 
 .header .navbar-full .navbar ul li a:hover {
   color: #F2994A !important;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content .content_information {
+  width: 85%;
+  margin: auto;
+  margin-left: 7rem;
+  margin-top: 5rem;
+}
+
+.content .content_information h1 {
+  font-size: 44px;
+  font-family: 'Oxygen', sans-serif;
+}
+
+.content .content_img {
+  width: 100%;
+}
+
+.content .content_img img {
+  width: 90%;
 }
 /*# sourceMappingURL=style.css.map */
