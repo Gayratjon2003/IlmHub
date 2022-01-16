@@ -303,8 +303,8 @@ h4 {
 
 .blok .blok-h1 {
   text-transform: uppercase;
-  font-size: 40px;
-  width: 60%;
+  font-size: 30px;
+  width: 50%;
   text-align: center;
   margin: 0 auto;
   color: #99EFD0;
@@ -373,6 +373,7 @@ h4 {
 .blok .blok-box .blok-box-blog .blok-blog-2 .blok-title h1 {
   margin-left: 15px;
   font-size: 50px;
+  font-size: 30px;
   color: #fff;
   border-bottom: 5px solid #787774;
 }
@@ -414,10 +415,133 @@ h4 {
   padding-right: 10%;
 }
 
-.location {
+.services .services-h1 {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 100px;
+  color: #99EFD0;
+  margin-bottom: 30px;
+}
+
+.services .services-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.services .services-box .card-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.services .services-box .card-logo .card {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 20px;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.services .services-box .card-logo img {
+  width: 90%;
+  height: 90%;
+  border-radius: 20px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  cursor: pointer;
+}
+
+.services .services-box .card-logo img:hover {
+  width: 95%;
+  height: 95%;
+}
+
+.services .services-box .card-logo .card-h1 {
+  margin-top: 30px;
+  text-align: center;
+  color: #99EFD0;
+  font-size: 25px;
+  padding-bottom: 50px;
+  text-transform: uppercase;
+}
+
+.location h1 {
+  text-align: center;
+  padding-top: 100px;
+  color: #99EFD0;
+  font-size: 30px;
+}
+
+.location .location-box {
   margin-top: 100px;
   text-align: center;
   color: #99EFD0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.location .location-box h5, .location .location-box i {
+  color: #fff;
+  font-size: 20px;
+  padding: 0 10px;
+  padding-top: 20px;
+}
+
+.location .location-box i:hover {
+  color: #F2994A;
+}
+
+.location .location-box .loc-blok-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+  height: 50vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.location .location-box .loc-blok-1 .loc-blog-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.location .location-box .loc-blok-2 {
+  width: 50%;
+  height: 50vh;
+  height: 100%;
+  margin-bottom: 100px;
+}
+
+.location .location-box .loc-blok-2 iframe {
+  width: 100%;
+  height: 50vh;
 }
 
 .network {
@@ -589,6 +713,7 @@ h4 {
   border-left: 4px solid #99EFD0;
   padding: 10px 0;
   padding-left: 35px;
+  margin-top: 30px;
 }
 
 .teg-ol li {
@@ -619,5 +744,23 @@ h4 {
   font-family: sans-serif;
   font-weight: 100 !important;
   display: none;
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 350px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
