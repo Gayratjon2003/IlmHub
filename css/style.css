@@ -30,10 +30,7 @@ body {
 }
 
 .header {
-<<<<<<< HEAD
-=======
   height: 100vh;
->>>>>>> 873b863ca8812100fed43d2e335a544219b3fac5
   color: #fff;
 }
 
@@ -218,7 +215,7 @@ body {
 }
 
 .content .content_information h1 {
-  width: 89%;
+  width: 90%;
   line-height: 45px;
   font-size: 44px;
   font-family: 'Oxygen', sans-serif;
@@ -253,10 +250,18 @@ body {
   border-radius: 5px;
   border: 1px solid #F2994A;
   cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .content .content_information .btn_get i {
   margin-left: 5px;
+}
+
+.content .content_information .btn_get:hover {
+  border: 1px solid #F2994A;
+  background-color: transparent;
+  color: #F2994A;
 }
 
 .content .content_img {
@@ -290,5 +295,131 @@ body {
 
 .blok .blok-box .blok-blog-2 {
   width: 50%;
+}
+
+.network {
+  display: none;
+}
+
+.footer_container {
+  background: #070C11;
+  opacity: 0.95;
+  height: 20rem;
+}
+
+.footer_part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 85%;
+  margin: 0 auto;
+  padding-top: 6rem;
+}
+
+.footer_part .footer_part_of {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer_part .footer_part_of .information {
+  padding-left: 5rem;
+  white-space: nowrap;
+}
+
+.footer_part .footer_part_of .information .network_link i {
+  margin-right: 15px;
+  font-size: 20px;
+  color: white;
+  background-color: black;
+}
+
+.footer_part .footer_part_of .information a {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer_part .footer_part_of .information h3 {
+  color: #99EFD0;
+}
+
+.footer_part .footer_part_of .information #footer_part_input {
+  margin-top: 8px;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 5px;
+  color: #99EFD0;
+  outline: none;
+}
+
+.footer_part .footer_part_of .information ul li {
+  padding-top: 12px;
+}
+
+.footer_logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer_part_of {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.button_my {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #F2994A;
+  border-radius: 10px;
+  padding-bottom: 6px;
+  margin-top: 1rem;
+}
+
+.button_my input {
+  border: none;
+  background-color: transparent;
+}
+
+.button_my .btn_icon {
+  background-color: #F2994A;
+  padding: 0.4rem 1rem;
+  margin-right: 0.4rem;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.button_my .btn_icon:hover {
+  background-color: #99EFD0;
+}
+
+.network_link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.logo_part {
+  width: 50px;
+}
+
+.Ilmhub {
+  margin-top: 10px;
+  font-size: 25px;
+  margin-left: 5px;
+  color: #fff;
+}
+
+.footer_p {
+  width: 65%;
+  margin-top: 20px;
+  color: #99EFD0;
 }
 /*# sourceMappingURL=style.css.map */

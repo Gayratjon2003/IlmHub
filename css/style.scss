@@ -42,15 +42,11 @@ body{
             animation: hover 4s infinite;
         
     }
-<<<<<<< HEAD
-=======
     height: 100vh;
->>>>>>> 873b863ca8812100fed43d2e335a544219b3fac5
     @include colornav();
     .navbar-full {
         background-color: #3B1D60;
         .navbar {
-
             width: 100%;
             height: 80px;
             display: flex;
@@ -152,7 +148,7 @@ body{
         margin-left: 7rem;
         margin-top: 5rem;
         h1{
-            width: 89%;
+            width: 90%;
             line-height: 45px;
             font-size: 44px;
             font-family: 'Oxygen', sans-serif;
@@ -184,8 +180,14 @@ body{
             border-radius: 5px;
             border: 1px solid #F2994A;
             cursor: pointer;
+            transition: 0.3s;
             i{
                 margin-left: 5px;
+            }
+            &:hover {
+                border: 1px solid #F2994A;
+                background-color: transparent;
+                color: #F2994A;
             }
         }
     }
@@ -218,4 +220,124 @@ body{
         }
     }
 
+}
+
+
+
+// FOOTER PART OF
+
+
+.network{
+    display: none;
+}
+
+.footer_container{
+    background: #070C11;
+    opacity: 0.95;
+    height: 20rem;
+    
+
+}
+
+.footer_part{
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin: 0 auto;
+    padding-top: 6rem;
+    
+    .footer_part_of{
+        display: flex;
+        .information{
+            padding-left: 5rem;
+            white-space: nowrap;
+            .network_link i{
+                margin-right: 15px;
+                font-size: 20px;
+                color: white;
+                background-color: black;
+            }
+            a{
+                color: rgba(255, 255, 255, 0.7);;
+            }
+            h3{
+                color: #99EFD0;
+            }
+            #footer_part_input{    
+                //input
+                margin-top: 8px;
+                border: none;
+                padding: 0.5rem;
+                border-radius: 5px;
+                color: #99EFD0;
+                outline: none;
+            }
+        }
+        .information ul li{
+            padding-top: 12px;
+            
+            
+        }
+        
+        
+    }
+}
+
+.footer_logo{
+    display: flex;
+    
+
+}
+
+.footer_part_of{
+    display: flex;
+
+}
+
+.button_my{
+    // border 
+    align-items: center;
+    border: 1px solid #F2994A;
+    border-radius: 10px;
+    padding-bottom: 6px;
+    margin-top: 1rem;
+    input{
+        border: none;
+        background-color: transparent;
+    }
+    .btn_icon{
+        background-color: #F2994A;
+        padding: 0.4rem 1rem;
+        margin-right: 0.4rem;
+        border-radius: 10px;
+        border: none;
+        font-size: 18px;
+        transition: 0.3s;
+        &:hover{
+            background-color: #99EFD0;
+        }
+        
+    }
+}
+
+.network_link{
+    display: flex;
+}
+
+.logo_part{
+    width: 50px;
+    
+}
+
+.Ilmhub{
+    margin-top: 10px;
+    font-size: 25px;
+    margin-left: 5px;
+    @include colornav();
+}
+
+.footer_p{
+    width: 65%;
+    margin-top: 20px;
+    color: #99EFD0;
 }
