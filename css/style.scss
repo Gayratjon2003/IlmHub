@@ -43,11 +43,8 @@ h4 {
             animation: hover 4s infinite;
         
     }
-<<<<<<< HEAD
     height: 100vh;
-=======
     height: 87vh;
->>>>>>> 114d3613b38a907a8d5542f2591ca67fb74706cb
     @include colornav();
     .navbar-full {
         background-color: #3B1D60;
@@ -315,7 +312,6 @@ h4 {
     }
 
 }
-<<<<<<< HEAD
 
 
 
@@ -324,6 +320,7 @@ h4 {
 
 .network{
     display: none;
+
 }
 
 .footer_container{
@@ -348,9 +345,14 @@ h4 {
             white-space: nowrap;
             .network_link i{
                 margin-right: 15px;
-                font-size: 20px;
-                color: white;
-                background-color: black;
+                font-size: 23px;
+                color: #F2994A;
+                transition: 0.3s;
+                &:hover{
+                    color: #99EFD0;
+                    
+                }
+               
             }
             a{
                 color: rgba(255, 255, 255, 0.7);;
@@ -370,7 +372,7 @@ h4 {
         }
         .information ul li{
             padding-top: 12px;
-            
+            list-style-type: none;
             
         }
         
@@ -417,7 +419,16 @@ h4 {
 
 .network_link{
     display: flex;
+    transition: 5s all linear !important;
+    li p{
+    transition: .5s !important;
+    }
+    li:hover .network{
+        display: block;
+        color: white;
+    }
 }
+
 
 .logo_part{
     width: 50px;
@@ -436,7 +447,6 @@ h4 {
     margin-top: 20px;
     color: #99EFD0;
 }
-=======
 .teg-ol {
     border-left: 4px solid #99EFD0;
     padding: 10px 0;
@@ -470,4 +480,3 @@ h4 {
     }
 }
 
->>>>>>> 114d3613b38a907a8d5542f2591ca67fb74706cb

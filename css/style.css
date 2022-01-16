@@ -33,11 +33,8 @@ h4 {
 }
 
 .header {
-<<<<<<< HEAD
   height: 100vh;
-=======
   height: 87vh;
->>>>>>> 114d3613b38a907a8d5542f2591ca67fb74706cb
   color: #fff;
 }
 
@@ -408,42 +405,6 @@ h4 {
   padding-right: 10%;
 }
 
-.teg-ol {
-  border-left: 4px solid #99EFD0;
-  padding: 10px 0;
-  padding-left: 35px;
-}
-
-.teg-ol li {
-  font-size: 20px;
-  color: #fff;
-  font-family: 'Gilroy';
-}
-
-.teg-ul {
-  border-left: 4px solid #99EFD0;
-  padding: 10px 0;
-  padding-left: 15px;
-  list-style: none;
-}
-
-.teg-ul li {
-  font-size: 20px;
-  color: #fff;
-  font-family: 'Gilroy';
-  padding-bottom: 10px;
-  padding-bottom: 5px;
-  font-weight: 900;
-}
-
-.teg-ul p {
-  font-size: 20px;
-  color: #fff;
-  font-family: sans-serif;
-  font-weight: 100 !important;
-  display: none;
-}
-
 .network {
   display: none;
 }
@@ -479,9 +440,14 @@ h4 {
 
 .footer_part .footer_part_of .information .network_link i {
   margin-right: 15px;
-  font-size: 20px;
-  color: white;
-  background-color: black;
+  font-size: 23px;
+  color: #F2994A;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.footer_part .footer_part_of .information .network_link i:hover {
+  color: #99EFD0;
 }
 
 .footer_part .footer_part_of .information a {
@@ -503,6 +469,7 @@ h4 {
 
 .footer_part .footer_part_of .information ul li {
   padding-top: 12px;
+  list-style-type: none;
 }
 
 .footer_logo {
@@ -551,6 +518,18 @@ h4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-transition: 5s all linear !important;
+  transition: 5s all linear !important;
+}
+
+.network_link li p {
+  -webkit-transition: .5s !important;
+  transition: .5s !important;
+}
+
+.network_link li:hover .network {
+  display: block;
+  color: white;
 }
 
 .logo_part {
@@ -568,5 +547,41 @@ h4 {
   width: 65%;
   margin-top: 20px;
   color: #99EFD0;
+}
+
+.teg-ol {
+  border-left: 4px solid #99EFD0;
+  padding: 10px 0;
+  padding-left: 35px;
+}
+
+.teg-ol li {
+  font-size: 20px;
+  color: #fff;
+  font-family: 'Gilroy';
+}
+
+.teg-ul {
+  border-left: 4px solid #99EFD0;
+  padding: 10px 0;
+  padding-left: 15px;
+  list-style: none;
+}
+
+.teg-ul li {
+  font-size: 20px;
+  color: #fff;
+  font-family: 'Gilroy';
+  padding-bottom: 10px;
+  padding-bottom: 5px;
+  font-weight: 900;
+}
+
+.teg-ul p {
+  font-size: 20px;
+  color: #fff;
+  font-family: sans-serif;
+  font-weight: 100 !important;
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */
