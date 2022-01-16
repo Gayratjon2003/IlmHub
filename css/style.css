@@ -7,6 +7,19 @@
           box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'Gilroy';
+  src: url("../gilroy/Gilroy-SemiBoldItalic.ttf") format("truetype");
+}
+
+p {
+  font-family: 'Gilroy';
+}
+
+body {
+  background: linear-gradient(222.26deg, #3B1D60 1.22%, #040D3E 106.28%);
+}
+
 .container {
   width: 85%;
   margin: 0 auto;
@@ -17,6 +30,10 @@ body {
 }
 
 .header {
+<<<<<<< HEAD
+=======
+  height: 100vh;
+>>>>>>> 873b863ca8812100fed43d2e335a544219b3fac5
   color: #fff;
 }
 
@@ -250,5 +267,28 @@ body {
   width: 90%;
   margin-left: 3rem;
   margin-top: 2rem;
+}
+
+.blok {
+  width: 100%;
+}
+
+.blok .blok-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.blok .blok-box .blok-blog-1 {
+  width: 50%;
+}
+
+.blok .blok-box .blok-blog-1 img {
+  width: 50%;
+  border-radius: 50%;
+}
+
+.blok .blok-box .blok-blog-2 {
+  width: 50%;
 }
 /*# sourceMappingURL=style.css.map */
