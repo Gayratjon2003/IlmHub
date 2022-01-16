@@ -15,9 +15,6 @@ const navUp = document.querySelector('#nav-up');
 
 const sticky1 = function(entries) {
   const[entry]= entries;
-
-  console.log('enty: ', entry.isIntersecting);
-
   if(entry.isIntersecting) {
     navUp.classList.remove('nav-up-block');
   }else {
@@ -31,6 +28,7 @@ const headerObserver1  = new IntersectionObserver(sticky1, {
   threshold: 0,
   rootMargin: `-${navHeight2}px`,
 });
+headerObserver1.observe(header);
 
 //  Sign In
 const signBtn = document.querySelector('#Sign');
@@ -67,7 +65,7 @@ signUp.addEventListener('click', ()=> {
     const SigInInput = document.querySelector('#sign_in_login');
     let email = SigInInput.value;
     function checkEmail(email) {
-    if (email.indexOf("@") !== -1 && email.indexOf(".") !== -1 && password1.value === password2.value && password1.value > 5) {
+    if (email.indexOf("@") !== -1 && email.indexOf(".") !== -1 && password1.value > 5 && password1.value === password2.value ) {
         if( email.indexOf(".") > email.indexOf("@") ) {
             // console.log('bor')
             location.href = "../index.html";
