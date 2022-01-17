@@ -51,7 +51,7 @@ signBtn.addEventListener('click', ()=> {
         }
     } else {
         // console.log('yo`q');
-        alert('Login yoki parol xato kiritildi ! Qaytadan urinib ko\'ring !')
+        alert('Login yoki parol xato kiritildi ! Qaytadan urinib ko\'ring ! Login or password entered incorrectly! Please try again!')
     }
 }
 
@@ -64,6 +64,7 @@ signUp.addEventListener('click', ()=> {
     const password2 = document.querySelector('#password2');
     const SigInInput = document.querySelector('#sign_in_login');
     let email = SigInInput.value;
+    console.log('salom');
     function checkEmail(email) {
     if (email.indexOf("@") !== -1 && email.indexOf(".") !== -1 && password1.value > 5 && password1.value === password2.value ) {
         if( email.indexOf(".") > email.indexOf("@") ) {
@@ -74,7 +75,7 @@ signUp.addEventListener('click', ()=> {
         }
     } else {
         // console.log('yo`q');
-        alert('Login yoki parol xato kiritildi ! Qaytadan urinib ko\'ring !')
+        alert('Login yoki parol xato kiritildi ! Qaytadan urinib ko\'ring ! Login or password entered incorrectly! Please try again !')
     }
 }
 
@@ -88,6 +89,7 @@ const signInBtn = document.querySelector('.sign-up');
 
 signInBtn.addEventListener('click', ()=> {
     signIn.classList.add('login-block');
+  
     closeBtn1.addEventListener('click', ()=> {
     signIn.classList.remove('login-block');
     })
