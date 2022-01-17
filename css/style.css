@@ -950,10 +950,18 @@ h4 {
 }
 
 .show-login-new {
-  display: block;
+  display: none;
 }
 
 .login-block {
   display: block !important;
+}
+
+.checkbtn {
+  display: none;
+}
+
+#check {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */

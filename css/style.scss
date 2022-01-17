@@ -778,12 +778,20 @@ h4 {
     top: -65px;
 }
 .show-login-new {
-    display: block;
+    display: none;
 }
 .login-block {
     display: block !important;
 }
+.checkbtn {
+    display: none;
+}
+#check {
+    display: none;
+}
 
- 
 //   MEDIA
 
+@media (max-width: 1200px) {
+
+}
