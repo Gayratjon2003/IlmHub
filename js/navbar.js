@@ -1,12 +1,13 @@
 'use strict'
 
-const navMenu = document.querySelector('.nav-menu');
+//  nav menu
+const navMenu = document.querySelector('.navbar-short');
 function myFunction() {
-    navMenu.classList.toggle('.nav-menu-action');
+    navMenu.classList.toggle('short-nav');
 }
 
-
-
-
-
+const navMenu1 = document.querySelector('.navbar-short');
+function myFunction() {
+    navMenu1.classList.toggle('short-nav');
+}
 

@@ -105,3 +105,29 @@ logInBtn.addEventListener('click', ()=> {
     });
 })
 
+//  clock
+
+
+setInterval( ()=> {
+    
+    const clock = document.querySelector(".clock");
+    
+    let getHour = new Date;
+    let hour = getHour.getHours();
+    let minutes = getHour.getMinutes();
+    let seconds = getHour.getSeconds();
+    
+    if (hour <10) {
+        hour= "0" + hour;
+    }
+    if (minutes <10) {
+        minutes= "0" + minutes;
+    }
+    if (seconds <10) {
+        seconds= "0" + seconds;
+    }
+    let result = `${hour}:${minutes}:${seconds}`;
+    clock.textContent = result;
+    });
+
+    
